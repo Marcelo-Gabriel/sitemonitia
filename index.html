@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Monit-IA | Soluções em Monitoramento Inteligente</title>
+</head>
+<body>
+    <!-- Header Corporativo -->
+    <header class="corporate-header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-social">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="corporate-nav">
+            <div class="container">
+                <div class="nav-brand">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <img src="logo.jpeg" alt="Logotipo da empresa" width="60" height="40">
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-main">MONIT-IA</span>
+                            <span class="logo-sub">Tecnologia & Inovação</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre Nós</a></li>
+                    <li><a href="#solucoes" class="nav-link">Soluções</a></li>
+                    <li><a href="#equipe" class="nav-link">Nossa Equipe</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+                
+                <div class="nav-cta">
+                    <button class="btn btn-primary" onclick="scrollToSection('contato')">
+                        <i class="fas fa-envelope"></i>
+                        Fale Conosco
+                    </button>
+                </div>
+                
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section Corporativa -->
+    <section id="home" class="corporate-hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span> Monitoramento Inteligente</span>
+                </div>
+                <h1 class="hero-title">
+                    Transforme sua operação industrial com 
+                    <span class="text-primary">Inteligência Artificial</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Soluções preditivas que aumentam a produtividade, 
+                    reduzem custos operacionais e garantem segurança máxima para suas operações.
+                </p>
+                <div class="hero-actions">
+                    <button class="btn btn-primary btn-large" onclick="scrollToSection('solucoes')">
+                        <i class="fas fa-cogs"></i>
+                        Conhecer Soluções
+                    </button>
+                    
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="dashboard-preview">
+                    <div class="dashboard-header">
+                        <div class="window-controls">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+                    <img src="mascote.jpeg" alt="Logotipo da empresa" width="600" height="500">
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Clientes -->
+    <!-- Seção Soluções -->
+    <section id="solucoes" class="solutions-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Soluções <span class="text-primary">Inteligentes</span></h2>
+                <p>Tecnologia de ponta para otimização industrial completa</p>
+            </div>
+            <div class="solutions-grid">
+                <div class="solution-card">
+                    <div class="solution-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Monitoramento Preditivo</h3>
+                    <p>Antecipe falhas e otimize manutenções com nossa IA avançada</p>
+                    <ul class="solution-features">
+                        <li><i class="fas fa-check"></i> Detecção de anomalias</li>
+                        <li><i class="fas fa-check"></i> Alertas inteligentes</li>
+                        <li><i class="fas fa-check"></i> Análise em tempo real</li>
+                    </ul>
+                    <button class="btn btn-link" onclick="showSolutionDetails('preditivo')">
+                        Saiba mais <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+                
+                <div class="solution-card featured">
+                    <div class="solution-badge">Mais Popular</div>
+                    <div class="solution-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Automação Inteligente</h3>
+                    <p>Processos automatizados com machine learning para máxima eficiência</p>
+                    <ul class="solution-features">
+                        <li><i class="fas fa-check"></i> Controle automático</li>
+                        <li><i class="fas fa-check"></i> Otimização contínua</li>
+                        <li><i class="fas fa-check"></i> Integração total</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="showSolutionDetails('automacao')">
+                        Ver Detalhes <i class="fas fa-info-circle"></i>
+                    </button>
+                </div>
+                
+                <div class="solution-card">
+                    <div class="solution-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Segurança Operacional</h3>
+                    <p>Sistemas de segurança avançados com visão computacional</p>
+                    <ul class="solution-features">
+                        <li><i class="fas fa-check"></i> Detecção de riscos</li>
+                        <li><i class="fas fa-check"></i> Conformidade normativa</li>
+                        <li><i class="fas fa-check"></i> Relatórios automáticos</li>
+                    </ul>
+                    <button class="btn btn-link" onclick="showSolutionDetails('seguranca')">
+                        Saiba mais <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="sobre" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="section-header">
+                        <h2>Excelência em <span class="text-primary">Tecnologia Industrial</span></h2>
+                        <!-- <p>Mais de uma década transformando a indústria brasileira</p> -->
+                    </div>
+                    <div class="about-description">
+                        <p>
+                            A <strong>Monit-IA</strong> é uma empresa em soluções de monitoramento 
+                            inteligente para a indústria. Combinamos expertise técnica com 
+                            tecnologia de ponta para entregar resultados mensuráveis.
+                        </p>
+                        <p>
+                            Nossa equipe multidisciplinar trabalha para desenvolver soluções 
+                            personalizadas que atendem às necessidades específicas de cada cliente.
+                        </p>
+                    </div>
+                   <!-- <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">12+</div>
+                            <div class="stat-label">Anos de Experiência</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">150+</div>
+                            <div class="stat-label">Projetos Concluídos</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">40%</div>
+                            <div class="stat-label">Aumento Médio em Produtividade</div>
+                        </div>
+                    </div> -->
+                    <div class="about-actions">
+                        <!-- <button class="btn btn-primary" onclick="downloadBrochure()">
+                            <i class="fas fa-download"></i>
+                            Baixar Brochura
+                        </button> -->
+                        <button class="btn btn-outline" onclick="scrollToSection('equipe')">
+                            <i class="fas fa-users"></i>
+                            Conhecer Equipe
+                        </button>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="certification-badge">
+                        <i class="fas fa-award"></i>
+                        <span>Certificada ISO 9001</span>
+                    </div>
+                    <div class="office-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-building"></i>
+                            <span>Sede Corporativa</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Equipe -->
+    <section id="equipe" class="team-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nossa <span class="text-primary">Equipe</span></h2>
+                <p>Especialistas em tecnologia industrial e inteligência artificial</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="" alt="Carlos Silva">
+                    </div>
+                    <h3>Carlos Silva</h3>
+                    <p class="member-role">CEO & Fundador</p>
+                    <p class="member-bio">Engenheiro com 15 anos de experiência em automação industrial</p>
+                    <div class="member-contact">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="" alt="Ana Rodrigues">
+                    </div>
+                    <h3>Ana Rodrigues</h3>
+                    <p class="member-role">CTO</p>
+                    <p class="member-bio">Doutora em Ciência da Computação e especialista em IA</p>
+                    <div class="member-contact">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="" alt="Miguel Santos">
+                    </div>
+                    <h3>Miguel Santos</h3>
+                    <p class="member-role">Head de Engenharia</p>
+                    <p class="member-bio">Especialista em sistemas embarcados e IoT industrial</p>
+                    <div class="member-contact">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="" alt="Miguel Santos">
+                    </div>
+                    <h3>Miguel Santos</h3>
+                    <p class="member-role">Head de Engenharia</p>
+                    <p class="member-bio">Especialista em sistemas embarcados e IoT industrial</p>
+                    <div class="member-contact">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="" alt="Miguel Santos">
+                    </div>
+                    <h3>Miguel Santos</h3>
+                    <p class="member-role">Head de Engenharia</p>
+                    <p class="member-bio">Especialista em sistemas embarcados e IoT industrial</p>
+                    <div class="member-contact">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="" alt="Miguel Santos">
+                    </div>
+                    <h3>Miguel Santos</h3>
+                    <p class="member-role">Head de Engenharia</p>
+                    <p class="member-bio">Especialista em sistemas embarcados e IoT industrial</p>
+                    <div class="member-contact">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Pronto para Transformar sua Operação?</h2>
+                <p>Entre em contato e descubra como nossa tecnologia pode elevar seus resultados</p>
+                <div class="cta-actions">
+                    <button class="btn btn-light btn-large" onclick="scrollToSection('contato')">
+                        <i class="fas fa-envelope"></i>
+                        Entrar em Contato
+                    </button>
+                    <!--<button class="btn btn-outline-light btn-large" onclick="showContactInfo()">
+                        <i class="fas fa-phone"></i>
+                        Falar com Especialista
+                    </button> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Entre em <span class="text-primary">Contato</span></h2>
+                <p>Estamos prontos para ajudar sua empresa</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Informações de Contato</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Endereço</strong>
+                            <p>sei la</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Telefone</strong>
+                            <p>kkk</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email</strong>
+                            <p>contato@monit-ia.com</p>
+                        </div>
+                    </div>
+                </div>
+               <!-- <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Seu nome completo" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Seu e-mail" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" placeholder="Seu telefone">
+                        </div>
+                        <div class="form-group">
+                            <select id="subject" required>
+                                <option value="" disabled selected>Assunto do contato</option>
+                                <option value="solucoes">Soluções e Produtos</option>
+                                <option value="suporte">Suporte Técnico</option>
+                                <option value="parceria">Parceria Comercial</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" placeholder="Sua mensagem" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-large">
+                            <i class="fas fa-paper-plane"></i>
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Corporativo -->
+    <footer class="corporate-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo">
+                            <div class="logo-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="logo-text">
+                                <span class="logo-main">MONIT-IA</span>
+                                <span class="logo-sub">Tecnologia & Inovação</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Soluções de monitoramento inteligente para a indústria 4.0, 
+                        transformando operações com tecnologia de ponta.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Soluções</h4>
+                    <ul class="footer-links">
+                        <li><a href="#solucoes" onclick="scrollToSection('solucoes')">Monitoramento Preditivo</a></li>
+                        <li><a href="#solucoes" onclick="scrollToSection('solucoes')">Automação Inteligente</a></li>
+                        <li><a href="#solucoes" onclick="scrollToSection('solucoes')">Segurança Operacional</a></li>
+                        <li><a href="#solucoes" onclick="scrollToSection('solucoes')">Dashboard Analytics</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Empresa</h4>
+                    <ul class="footer-links">
+                        <li><a href="#sobre" onclick="scrollToSection('sobre')">Sobre Nós</a></li>
+                        <li><a href="#equipe" onclick="scrollToSection('equipe')">Nossa Equipe</a></li>
+                        <li><a href="#contato" onclick="scrollToSection('contato')">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>sei la</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>kkk</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>contato@monit-ia.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2025 Monit-IA Tecnologia & Inovação. Todos os direitos reservados.</p>
+                </div>
+                <!--<div class="footer-legal">
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                </div>-->
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal para detalhes das soluções -->
+    <div id="solutionModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="modalTitle">Detalhes da Solução</h2>
+            <div id="modalContent">
+                <!-- Conteúdo será preenchido via JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Função para rolar suavemente para seções
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({ 
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        }
+
+        // Função para mostrar detalhes das soluções
+        function showSolutionDetails(solutionType) {
+            const modal = document.getElementById('solutionModal');
+            const modalTitle = document.getElementById('modalTitle');
+            const modalContent = document.getElementById('modalContent');
+            
+            let title = '';
+            let content = '';
+            
+            switch(solutionType) {
+                case 'preditivo':
+                    title = 'Monitoramento Preditivo';
+                    content = `
+                        <h3>Solução Completa para Manutenção Preditiva</h3>
+                        <p>Nossa solução de monitoramento preditivo utiliza algoritmos de IA avançados para antecipar falhas e otimizar programas de manutenção.</p>
+                        <h4>Benefícios:</h4>
+                        <ul>
+                            <li>Redução de até 85% em paradas não planejadas</li>
+                            <li>Aumento de 30% na vida útil dos equipamentos</li>
+                            <li>Relatórios detalhados em tempo real</li>
+                        </ul>
+                        <h4>Tecnologias:</h4>
+                        <ul>
+                            <li>Sensores IoT de alta precisão</li>
+                            <li>Dashboard em tempo real</li>
+                            <li>Alertas automáticos via email/SMS</li>
+                        </ul>
+                    `;
+                    break;
+                    
+                case 'automacao':
+                    title = 'Automação Inteligente';
+                    content = `
+                        <h3>Automação Industrial com IA</h3>
+                        <p>Sistema completo de automação que aprende e se adapta continuamente para maximizar a eficiência operacional.</p>
+                        <h4>Benefícios:</h4>
+                        <ul>
+                            <li>Aumento de 40% na produtividade</li>
+                            <li>Redução de 60% em erros operacionais</li>
+                            <li>Otimização automática de processos</li>
+                            <li>Integração com sistemas existentes</li>
+                        </ul>
+                        <h4>Funcionalidades:</h4>
+                        <ul>
+                            <li>Controle adaptativo em tempo real</li>
+                            <li>Otimização de parâmetros automática</li>
+                            <li>Relatórios de performance detalhados</li>
+                            <li>Interface intuitiva e personalizável</li>
+                        </ul>
+                    `;
+                    break;
+                    
+                case 'seguranca':
+                    title = 'Segurança Operacional';
+                    content = `
+                        <h3>Sistema Avançado de Segurança</h3>
+                        <p>Solução completa de segurança utilizando visão computacional e IA para proteger colaboradores e ativos.</p>
+                        <h4>Benefícios:</h4>
+                        <ul>
+                            <li>Eliminação de incidentes de segurança</li>
+                            <li>Conformidade total com normas regulatórias</li>
+                            <li>Alertas em tempo real para situações de risco</li>
+                            <li>Relatórios automáticos para auditoria</li>
+                        </ul>
+                        <h4>Recursos:</h4>
+                        <ul>
+                            <li>Detecção de comportamentos de risco</li>
+                            <li>Monitoramento de EPIs obrigatórios</li>
+                            <li>Zonas de segurança virtuais</li>
+                            <li>Integração com sistemas de alarme</li>
+                        </ul>
+                    `;
+                    break;
+            }
+            
+            modalTitle.textContent = title;
+            modalContent.innerHTML = content;
+            modal.style.display = 'block';
+        }
+
+        // Função para baixar brochure
+        function downloadBrochure() {
+            alert('Brochura corporativa será baixada em breve! Enquanto isso, entre em contato para receber informações detalhadas.');
+            // Em uma implementação real, aqui seria o link para download
+        }
+
+        // Função para mostrar informações de contato
+        function showContactInfo() {
+            alert('Entre em contato conosco:\n\nTelefone: (11) 3456-7890\nEmail: contato@monit-ia.com\nHorário: Segunda a Sexta, 8h às 18h');
+        }
+
+        // Fechar modal
+        document.querySelector('.close-modal').addEventListener('click', function() {
+            document.getElementById('solutionModal').style.display = 'none';
+        });
+
+        // Fechar modal ao clicar fora
+        window.addEventListener('click', function(event) {
+            const modal = document.getElementById('solutionModal');
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+
+        // Menu mobile toggle
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-menu').classList.toggle('active');
+            this.classList.toggle('active');
+        });
+        
+        // Smooth scroll para links de navegação
+        document.querySelectorAll('.nav-link').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                window.scrollTo({
+                    top: targetElement.offsetTop - 100,
+                    behavior: 'smooth'
+                });
+                
+                // Fechar menu mobile após clique
+                document.querySelector('.nav-menu').classList.remove('active');
+                document.querySelector('.menu-toggle').classList.remove('active');
+                
+                // Atualizar link ativo
+                document.querySelectorAll('.nav-link').forEach(link => {
+                    link.classList.remove('active');
+                });
+                this.classList.add('active');
+            });
+        });
+
+        // Form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Coletar dados do formulário
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                subject: document.getElementById('subject').value,
+                message: document.getElementById('message').value
+            };
+            
+            // Simular envio (em produção, seria uma requisição AJAX)
+            alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
+            
+            // Limpar formulário
+            this.reset();
+        });
+
+        // Animated counters
+        function animateCounter() {
+            const counters = document.querySelectorAll('.stat-number');
+            const speed = 200;
+            
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-count') || +counter.innerText.replace('+', '');
+                const count = +counter.innerText.replace('+', '');
+                const increment = target / speed;
+                
+                if (count < target) {
+                    counter.innerText = Math.ceil(count + increment);
+                    setTimeout(animateCounter, 1);
+                } else {
+                    counter.innerText = target;
+                }
+            });
+        }
+        
+        // Start counters when in view
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounter();
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+        
+        // Observar elementos com estatísticas
+        document.querySelectorAll('.hero-stats, .about-stats').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
