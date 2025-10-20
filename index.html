@@ -158,152 +158,187 @@
         </div>
     </section>
 
-    <!-- Seção Sobre -->
-    <section id="sobre" class="about-section">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <div class="section-header">
-                        <h2>Excelência em <span class="text-primary">Tecnologia Industrial</span></h2>
-                        <!-- <p>Mais de uma década transformando a indústria brasileira</p> -->
-                    </div>
-                    <div class="about-description">
-                        <p>
-                            A <strong>Monit-IA</strong> é uma empresa em soluções de monitoramento 
-                            inteligente para a indústria. Combinamos expertise técnica com 
-                            tecnologia de ponta para entregar resultados mensuráveis.
-                        </p>
-                        <p>
-                            Nossa equipe multidisciplinar trabalha para desenvolver soluções 
-                            personalizadas que atendem às necessidades específicas de cada cliente.
-                        </p>
-                    </div>
-                   <!-- <div class="about-stats">
-                        <div class="stat-item">
-                            <div class="stat-number">12+</div>
-                            <div class="stat-label">Anos de Experiência</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">150+</div>
-                            <div class="stat-label">Projetos Concluídos</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">40%</div>
-                            <div class="stat-label">Aumento Médio em Produtividade</div>
-                        </div>
-                    </div> -->
-                    <div class="about-actions">
-                        <!-- <button class="btn btn-primary" onclick="downloadBrochure()">
-                            <i class="fas fa-download"></i>
-                            Baixar Brochura
-                        </button> -->
-                        <button class="btn btn-outline" onclick="scrollToSection('equipe')">
-                            <i class="fas fa-users"></i>
-                            Conhecer Equipe
-                        </button>
-                    </div>
+    <!-- Seção Sobre - ATUALIZADA -->
+<section id="sobre" class="about-section">
+    <div class="container">
+        <div class="about-content">
+            <div class="about-text">
+                <div class="section-header">
+                    <h2>Excelência em <span class="text-primary">Tecnologia Industrial</span></h2>
                 </div>
-                <div class="about-visual">
-                    <div class="certification-badge">
-                        <i class="fas fa-award"></i>
-                        <span>Certificada ISO 9001</span>
-                    </div>
-                    <div class="office-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-building"></i>
-                            <span>Sede Corporativa</span>
+                <div class="about-description">
+                    <p>
+                        A <strong>Monit-IA</strong> é uma empresa em soluções de monitoramento 
+                        inteligente para a indústria. Combinamos expertise técnica com 
+                        tecnologia de ponta para entregar resultados mensuráveis.
+                    </p>
+                    <p>
+                        Nossa equipe multidisciplinar trabalha para desenvolver soluções 
+                        personalizadas que atendem às necessidades específicas de cada cliente.
+                    </p>
+                </div>
+                <div class="about-actions">
+                    <button class="btn btn-outline" onclick="scrollToSection('equipe')">
+                        <i class="fas fa-users"></i>
+                        Conhecer Equipe
+                    </button>
+                </div>
+            </div>
+            <div class="about-visual">
+                <div class="certification-badge">
+                    <i class="fas fa-code"></i>
+                    <span>Tecnologias</span>
+                </div>
+                <div class="tech-stack">
+                    <h4>Tecnologias Implementadas</h4>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <i class="fab fa-python"></i>
+                            <span>Html / javascript</span>
+                        </div>
+                        <!--<div class="tech-item">
+                            <i class="fas fa-brain"></i>
+                            <span>TensorFlow</span>
+                        </div> -->
+                        <div class="tech-item">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>Power BI</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-microsoft"></i>
+                            <span>Azure IoT</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-database"></i>
+                            <span>SQL Server</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-js"></i>
+                            <span>Node.js</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Seção Equipe -->
-    <section id="equipe" class="team-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Nossa <span class="text-primary">Equipe</span></h2>
-                <p>Especialistas em tecnologia industrial e inteligência artificial</p>
+    <!-- Seção Equipe - COM FOTOS -->
+<section id="equipe" class="team-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Nossa <span class="text-primary">Equipe</span></h2>
+            <p>Conheça os membros na nossa equipe.</p>
+        </div>
+        <div class="team-grid">
+            <!-- Membro 1 -->
+            <div class="team-member">
+                <div class="member-photo">
+                    <img src="fotos/emanuel.jpg" alt="Emanuel Sousa" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="photo-placeholder" style="display: none;">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+                <h3>Emanuel Sousa</h3>
+                <p class="member-bio">Descrição</p>
+                <div class="member-contact">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </div>
             </div>
-            <div class="team-grid">
-                <div class="team-member">
-                    <div class="member-photo">
-                        <img src="" alt="Carlos Silva">
-                    </div>
-                    <h3>Carlos Silva</h3>
-                    <p class="member-role">CEO & Fundador</p>
-                    <p class="member-bio">Engenheiro com 15 anos de experiência em automação industrial</p>
-                    <div class="member-contact">
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fas fa-envelope"></i></a>
+            
+            <!-- Membro 2 -->
+            <div class="team-member">
+                <div class="member-photo">
+                    <img src="fotos/Guilherme-Gracie" alt="Guilherme Gracie" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="photo-placeholder" style="display: none;">
+                        <i class="fas fa-user"></i>
                     </div>
                 </div>
-                
-                <div class="team-member">
-                    <div class="member-photo">
-                        <img src="" alt="Ana Rodrigues">
-                    </div>
-                    <h3>Ana Rodrigues</h3>
-                    <p class="member-role">CTO</p>
-                    <p class="member-bio">Doutora em Ciência da Computação e especialista em IA</p>
-                    <div class="member-contact">
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fas fa-envelope"></i></a>
+                <h3>Guilherme Gracie</h3>
+                <p class="member-bio">Descrição</p>
+                <div class="member-contact">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            
+            <!-- Membro 3 -->
+            <div class="team-member">
+                <div class="member-photo">
+                    <img src="fotos/Guilherme-Naue.jpg" alt="Guilherme Naue" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="photo-placeholder" style="display: none;">
+                        <i class="fas fa-user"></i>
                     </div>
                 </div>
-                
-                <div class="team-member">
-                    <div class="member-photo">
-                        <img src="" alt="Miguel Santos">
-                    </div>
-                    <h3>Miguel Santos</h3>
-                    <p class="member-role">Head de Engenharia</p>
-                    <p class="member-bio">Especialista em sistemas embarcados e IoT industrial</p>
-                    <div class="member-contact">
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fas fa-envelope"></i></a>
+                <h3>Guilherme Naue</h3>
+                <p class="member-bio">Descrição</p>
+                <div class="member-contact">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            
+            <!-- Membro 4 -->
+            <div class="team-member">
+                <div class="member-photo">
+                    <img src="fotos/João-Pedro.jpg" alt="João Pedro" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="photo-placeholder" style="display: none;">
+                        <i class="fas fa-user"></i>
                     </div>
                 </div>
-                <div class="team-member">
-                    <div class="member-photo">
-                        <img src="" alt="Miguel Santos">
-                    </div>
-                    <h3>Miguel Santos</h3>
-                    <p class="member-role">Head de Engenharia</p>
-                    <p class="member-bio">Especialista em sistemas embarcados e IoT industrial</p>
-                    <div class="member-contact">
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fas fa-envelope"></i></a>
+                <h3>João Pedro</h3>
+                <p class="member-bio">Descrição</p>
+                <div class="member-contact">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            
+            <!-- Membro 5 -->
+            <div class="team-member">
+                <div class="member-photo">
+                    <img src="fotos/Maria.jpg" alt="Maria" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="photo-placeholder" style="display: none;">
+                        <i class="fas fa-user"></i>
                     </div>
                 </div>
-                <div class="team-member">
-                    <div class="member-photo">
-                        <img src="" alt="Miguel Santos">
-                    </div>
-                    <h3>Miguel Santos</h3>
-                    <p class="member-role">Head de Engenharia</p>
-                    <p class="member-bio">Especialista em sistemas embarcados e IoT industrial</p>
-                    <div class="member-contact">
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fas fa-envelope"></i></a>
-                    </div>
-                </div>
-                <div class="team-member">
-                    <div class="member-photo">
-                        <img src="" alt="Miguel Santos">
-                    </div>
-                    <h3>Miguel Santos</h3>
-                    <p class="member-role">Head de Engenharia</p>
-                    <p class="member-bio">Especialista em sistemas embarcados e IoT industrial</p>
-                    <div class="member-contact">
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fas fa-envelope"></i></a>
-                    </div>
+                <h3>Maria</h3>
+                <p class="member-bio">Descrição</p>
+                <div class="member-contact">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
                 </div>
             </div>
         </div>
-    </section>
+        
+        <!-- Seção de Habilidades da Equipe -->
+        <!-- <div class="team-skills">
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Competências Técnicas</h4>
+                    <ul class="skills-list">
+                        <li>Inteligência Artificial</li>
+                        <li>Machine Learning</li>
+                        <li>IoT Industrial</li>
+                        <li>Análise de Dados</li>
+                        <li>Desenvolvimento Full-Stack</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h4>Especialidades</h4>
+                    <ul class="skills-list">
+                        <li>Monitoramento Preditivo</li>
+                        <li>Automação Industrial</li>
+                        <li>Dashboards em Tempo Real</li>
+                        <li>Integração de Sistemas</li>
+                        <li>UX/UI para Indústria</li>
+                    </ul>
+                </div>
+            </div>
+        </div> -->
+    </div>
+</section>
 
     <!-- CTA Section -->
     <section class="cta-section">
@@ -442,15 +477,15 @@
                     <div class="contact-info">
                         <div class="contact-item">
                             <i class="fas fa-map-marker-alt"></i>
-                            <span>sei la</span>
+                            <span>Av. Petrônio Portella, 2275 - Primavera, Teresina - PI, 64003-600</span>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-phone"></i>
-                            <span>kkk</span>
+                            <span>(86) 986218162</span>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-envelope"></i>
-                            <span>contato@monit-ia.com</span>
+                            <span>contatomonitia@gmail.com</span>
                         </div>
                     </div>
                 </div>
@@ -571,11 +606,6 @@
             modal.style.display = 'block';
         }
 
-        // Função para baixar brochure
-        function downloadBrochure() {
-            alert('Brochura corporativa será baixada em breve! Enquanto isso, entre em contato para receber informações detalhadas.');
-            // Em uma implementação real, aqui seria o link para download
-        }
 
         // Função para mostrar informações de contato
         function showContactInfo() {
@@ -679,6 +709,30 @@
         document.querySelectorAll('.hero-stats, .about-stats').forEach(section => {
             observer.observe(section);
         });
+
+        // Fallback automático para fotos não encontradas
+document.addEventListener('DOMContentLoaded', function() {
+    const memberPhotos = document.querySelectorAll('.member-photo img');
+    
+    memberPhotos.forEach(img => {
+        img.addEventListener('error', function() {
+            this.style.display = 'none';
+            const placeholder = this.nextElementSibling;
+            if (placeholder && placeholder.classList.contains('photo-placeholder')) {
+                placeholder.style.display = 'flex';
+            }
+        });
+        
+        // Verifica se a imagem carregou corretamente
+        if (img.complete && img.naturalHeight === 0) {
+            img.style.display = 'none';
+            const placeholder = img.nextElementSibling;
+            if (placeholder && placeholder.classList.contains('photo-placeholder')) {
+                placeholder.style.display = 'flex';
+            }
+        }
+    });
+});
     </script>
 </body>
 </html>
