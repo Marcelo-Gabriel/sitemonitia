@@ -317,88 +317,275 @@ p {
     border-radius: 2px;
 }
 
-/* Hero Section - RESPONSIVO */
+/* Hero Section - REDESENHADA */
 .corporate-hero {
-    padding: clamp(100px, 15vw, 160px) 0 clamp(40px, 8vw, 80px);
+    padding: 120px 0 60px;
     background: linear-gradient(135deg, var(--gray-50) 0%, var(--light) 100%);
     position: relative;
     overflow: hidden;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 .corporate-hero .container {
     display: grid;
     grid-template-columns: 1fr;
-    gap: clamp(30px, 6vw, 60px);
+    gap: 3rem;
     align-items: center;
+    width: 100%;
+}
+
+.hero-content {
+    text-align: center;
+    order: 2;
+}
+
+.hero-visual {
+    order: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Mascote com proporções harmoniosas */
+.hero-mascote {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 
+        0 20px 40px rgba(30, 64, 175, 0.15),
+        0 8px 16px rgba(30, 64, 175, 0.1);
+    transition: all 0.3s ease;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.1));
+}
+
+.hero-mascote:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 
+        0 25px 50px rgba(30, 64, 175, 0.2),
+        0 12px 24px rgba(30, 64, 175, 0.15);
 }
 
 .hero-badge {
     display: inline-block;
-    background: var(--primary-light);
+    background: linear-gradient(135deg, var(--primary-light), var(--primary));
     color: var(--light);
-    padding: clamp(4px, 1.5vw, 6px) clamp(12px, 3vw, 14px);
+    padding: 8px 16px;
     border-radius: 20px;
-    font-size: clamp(0.7rem, 2vw, 0.875rem);
-    font-weight: 500;
-    margin-bottom: clamp(16px, 3vw, 20px);
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    box-shadow: var(--shadow);
 }
 
 .hero-title {
-    font-size: clamp(1.8rem, 6vw, 3.5rem);
+    font-size: 2.5rem;
     font-weight: 700;
     line-height: 1.1;
-    margin-bottom: clamp(16px, 3vw, 20px);
+    margin-bottom: 1.5rem;
     color: var(--gray-900);
-    text-align: center;
+    background: linear-gradient(135deg, var(--gray-900), var(--primary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .hero-subtitle {
-    font-size: clamp(1rem, 3vw, 1.25rem);
+    font-size: 1.125rem;
     color: var(--gray-600);
-    margin-bottom: clamp(24px, 5vw, 40px);
+    margin-bottom: 2.5rem;
     line-height: 1.6;
-    text-align: center;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-actions {
     display: flex;
-    gap: clamp(10px, 2.5vw, 16px);
+    gap: 1rem;
+    justify-content: center;
     flex-wrap: wrap;
-    justify-content: center;
 }
 
-.hero-visual {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    order: -1;
+/* Elementos decorativos */
+.hero-visual::before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(135deg, var(--primary-light), transparent);
+    border-radius: 50%;
+    top: -50px;
+    right: -50px;
+    opacity: 0.1;
+    z-index: -1;
 }
 
-.hero-visual img {
-    max-width: 100%;
-    height: auto;
-    border-radius: var(--border-radius-lg);
-    box-shadow: var(--shadow-lg);
+.hero-visual::after {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(135deg, transparent, var(--accent));
+    border-radius: 50%;
+    bottom: -30px;
+    left: -30px;
+    opacity: 0.1;
+    z-index: -1;
 }
 
-/* Seções Gerais - RESPONSIVAS */
-.section-header {
-    text-align: center;
-    margin-bottom: clamp(30px, 8vw, 60px);
+/* ========== RESPONSIVIDADE HARMÔNICA ========== */
+
+/* Tablets */
+@media (min-width: 768px) {
+    .corporate-hero .container {
+        grid-template-columns: 1.2fr 1fr;
+        gap: 4rem;
+        align-items: center;
+    }
+    
+    .hero-content {
+        text-align: left;
+        order: 1;
+    }
+    
+    .hero-visual {
+        order: 2;
+    }
+    
+    .hero-title {
+        font-size: 3rem;
+    }
+    
+    .hero-subtitle {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .hero-actions {
+        justify-content: flex-start;
+    }
+    
+    .hero-mascote {
+        max-width: 320px;
+    }
 }
 
-.section-header h2 {
-    font-size: clamp(1.5rem, 5vw, 2.5rem);
-    margin-bottom: clamp(12px, 3vw, 16px);
+/* Desktop Médio */
+@media (min-width: 1024px) {
+    .corporate-hero .container {
+        gap: 5rem;
+    }
+    
+    .hero-title {
+        font-size: 3.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.25rem;
+    }
+    
+    .hero-mascote {
+        max-width: 380px;
+    }
 }
 
-.section-header p {
-    font-size: clamp(0.9rem, 2.5vw, 1.125rem);
-    color: var(--gray-600);
-    max-width: 600px;
-    margin: 0 auto;
+/* Desktop Grande */
+@media (min-width: 1280px) {
+    .hero-mascote {
+        max-width: 420px;
+    }
 }
 
+/* Mobile Pequeno */
+@media (max-width: 480px) {
+    .corporate-hero {
+        padding: 100px 0 40px;
+        min-height: auto;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .hero-mascote {
+        max-width: 220px;
+    }
+    
+    .hero-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero-actions .btn {
+        width: 100%;
+        max-width: 280px;
+    }
+}
+
+/* Mobile Médio */
+@media (max-width: 767px) {
+    .corporate-hero .container {
+        gap: 2rem;
+    }
+    
+    .hero-mascote {
+        max-width: 250px;
+    }
+}
+
+/* Landscape Mobile */
+@media (max-height: 700px) and (orientation: landscape) {
+    .corporate-hero {
+        min-height: auto;
+        padding: 100px 0 40px;
+    }
+    
+    .hero-mascote {
+        max-width: 200px;
+    }
+}
+
+/* Ajustes de altura */
+@media (max-height: 600px) {
+    .corporate-hero {
+        min-height: auto;
+    }
+}
+
+/* Animações suaves */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.hero-mascote {
+    animation: float 6s ease-in-out infinite;
+}
+
+/* Efeito de brilho sutil */
+.hero-content::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, var(--primary-light) 0%, transparent 70%);
+    opacity: 0.05;
+    z-index: -1;
+}
 /* Seção Soluções - RESPONSIVA */
 .solutions-section {
     padding: clamp(40px, 10vw, 100px) 0;
