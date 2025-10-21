@@ -318,8 +318,7 @@ p {
 }
 
 /* Hero Section - REDESENHADA */
-
-/* Hero Section - SEM MASCOTE */
+/* Hero Section - SEMPRE CENTRALIZADO */
 .corporate-hero {
     padding: 140px 0 80px;
     background: linear-gradient(135deg, var(--gray-50) 0%, var(--light) 100%);
@@ -334,6 +333,12 @@ p {
 .corporate-hero .container {
     max-width: 800px;
     margin: 0 auto;
+    width: 100%;
+}
+
+.hero-content {
+    text-align: center;
+    width: 100%;
 }
 
 .hero-badge {
@@ -354,6 +359,7 @@ p {
     line-height: 1.1;
     margin-bottom: 1.5rem;
     color: var(--gray-900);
+    text-align: center;
 }
 
 .hero-title .text-primary {
@@ -368,6 +374,10 @@ p {
     color: var(--gray-600);
     margin-bottom: 2.5rem;
     line-height: 1.6;
+    text-align: center;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-actions {
@@ -377,8 +387,60 @@ p {
     flex-wrap: wrap;
 }
 
-/* Responsividade do Hero */
-@media (max-width: 768px) {
+/* Elementos decorativos para o hero */
+.corporate-hero::before {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(135deg, var(--primary-light), transparent);
+    border-radius: 50%;
+    top: -100px;
+    right: -100px;
+    opacity: 0.1;
+    z-index: 0;
+}
+
+.corporate-hero::after {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(135deg, transparent, var(--accent));
+    border-radius: 50%;
+    bottom: -50px;
+    left: -50px;
+    opacity: 0.1;
+    z-index: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+/* ========== RESPONSIVIDADE ========== */
+
+/* Tablets */
+@media (min-width: 768px) {
+    .hero-title {
+        font-size: 3.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.3rem;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .hero-title {
+        font-size: 4rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
     .corporate-hero {
         padding: 120px 0 60px;
         min-height: auto;
@@ -390,12 +452,22 @@ p {
     
     .hero-subtitle {
         font-size: 1.1rem;
+        padding: 0 10px;
+    }
+    
+    .hero-actions {
+        gap: 0.8rem;
     }
 }
 
+/* Mobile Pequeno */
 @media (max-width: 480px) {
     .hero-title {
         font-size: 1.8rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
     }
     
     .hero-actions {
@@ -407,6 +479,28 @@ p {
         width: 100%;
         max-width: 280px;
     }
+    
+    .hero-badge {
+        font-size: 0.8rem;
+        padding: 8px 16px;
+    }
+}
+
+/* Landscape Mobile */
+@media (max-height: 600px) and (orientation: landscape) {
+    .corporate-hero {
+        min-height: auto;
+        padding: 100px 0 40px;
+    }
+}
+
+/* Garantir que tudo fique centralizado */
+.hero-content * {
+    text-align: center !important;
+}
+
+.hero-actions {
+    justify-content: center !important;
 }
 
 
